@@ -1,0 +1,4 @@
+*.swp
+__pycache__/
+
+phi/phi/local_settings.py

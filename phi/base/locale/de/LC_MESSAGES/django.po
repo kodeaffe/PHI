@@ -1,0 +1,26 @@
+# Translations of base app.
+# Copyright (C) 2017
+# This file is distributed under the same license as the phi package.
+# Sebastian Henschel <phi@kodeaffe.de>, 2017
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-28 13:29+0200\n"
+"PO-Revision-Date: 2017-09-28 13:30+0200\n"
+"Last-Translator: Sebastian Henschel <phi@kodeaffe.de>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/base.html:16
+msgid "PHI"
+msgstr "PHI"
+
+#: templates/base.html:36
+msgid "Start"
+msgstr "Start"

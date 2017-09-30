@@ -1,0 +1,54 @@
+{% load static i18n i18n_urls %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block page_title %}PHI{% endblock page_title %}</title>
+	<meta name="generator" content="Vim" />
+  <meta name="author" content="Sebastian Henschel" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="{% static 'css/bootstrap-3.3.7.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/base.css' %}" rel="stylesheet">
+  {% block extracss %}{% endblock extracss %}
+</head>
+<body>
+
+<nav class="navbar navbar-inverse container">
+  <a class="navbar-brand" href="{% url 'construction-systems:index' %}">{% trans "PHI" %}</a>
+    <span class="navbar-text pull-right">
+      <a href="{% url 'admin:index' %}" class="navbar-link">{% trans "Admin" %}</a> |
+			{% get_current_language as language_code %}
+			{% get_available_languages as languages %}
+			{% for lang in languages %}
+			  {% if lang.0 == language_code %}
+           {{ lang.0 }}
+        {% else %}
+          <a href="{% change_lang lang.0 %}" class="navbar-link">{{ lang.0 }}</a>
+        {% endif %}
+			{% endfor %}
+    </span>
+</nav>
+
+
+<header class="container">
+</header>
+
+<div class="container">
+	<ol class="breadcrumb">
+		<li><a href="{% url 'construction-systems:index' %}">{% trans "Start" %}</a></li>
+		{% block breadcrumbs %}{% endblock breadcrumbs %}
+	</ol>
+</div>
+
+{% block content %}{% endblock content %}
+
+<footer class="container">
+</footer>
+
+<script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap-3.3.7.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+{% block extrajs %}{% endblock extrajs %}
+
+</body>
+</html>
+
