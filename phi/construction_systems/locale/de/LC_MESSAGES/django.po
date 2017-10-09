@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-28 19:04+0200\n"
-"PO-Revision-Date: 2017-09-28 19:05+0200\n"
+"POT-Creation-Date: 2017-10-09 05:51+0200\n"
+"PO-Revision-Date: 2017-10-09 05:52+0200\n"
 "Last-Translator: Sebastian Henschel <phi@kodeaffe.de>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -17,158 +17,154 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:7 models.py:163 templates/construction_systems/index.html:4
+#: apps.py:7 models.py:169 templates/construction_systems/index.html:4
 #: templates/construction_systems/index.html:8
 #: templates/construction_systems/index.html:15
 msgid "Construction Systems"
 msgstr "Bausysteme"
 
-#: models.py:15
-msgid "Street"
-msgstr "Strasse"
-
-#: models.py:16
-msgid "Street of the address"
-msgstr "Strasse der Anschrift"
-
-#: models.py:23
-msgid "Post code"
-msgstr "PLZ"
-
-#: models.py:24
-msgid "Post code of the address (if applicable)"
-msgstr "Postleitzahl der Anschrift (falls anwendbar)"
-
-#: models.py:31
-msgid "Locality"
-msgstr "Ort"
-
-#: models.py:32
-msgid "Locality of the address, e.g. village, city"
-msgstr "Ort der Anschrift, z.B. Dorf, Stadt"
-
-#: models.py:38
-msgid "Region"
-msgstr "Region"
-
-#: models.py:39
-msgid "Region of the address, e.g. state, province, county"
-msgstr "Region der Anschrift, z.B. Staat, Provinz, Bundesland"
-
-#: models.py:45
-msgid "Country"
-msgstr "Land"
-
-#: models.py:46
-msgid "Country of the address, e.g. nation state"
-msgstr "Land der Anschift, z.B. Nationalstaat"
-
-#: models.py:51
-msgid "Company Address"
-msgstr "Firmenanschrift"
-
-#: models.py:52
-msgid "Company Addresses"
-msgstr "Firmenanschriften"
-
-#: models.py:64 models.py:91 models.py:110
+#: models.py:18 models.py:95 models.py:116
 #: templates/construction_systems/index.html:19
 msgid "Name"
 msgstr "Name"
 
-#: models.py:65
+#: models.py:19
 msgid "Name of the company"
 msgstr "Name der Firma"
 
-#: models.py:72
-msgid "Address"
-msgstr "Anschrift"
-
-#: models.py:73
-msgid "Address of the company"
-msgstr "Anschrift der Firma"
-
-#: models.py:78
+#: models.py:23 models.py:74
 msgid "Company"
 msgstr "Firma"
 
-#: models.py:79
+#: models.py:24
 msgid "Companies"
 msgstr "Firmen"
 
-#: models.py:92
+#: models.py:36
+msgid "Street"
+msgstr "Strasse"
+
+#: models.py:37
+msgid "Street of the address"
+msgstr "Strasse der Anschrift"
+
+#: models.py:44
+msgid "Post code"
+msgstr "PLZ"
+
+#: models.py:45
+msgid "Post code of the address (if applicable)"
+msgstr "Postleitzahl der Anschrift (falls anwendbar)"
+
+#: models.py:52
+msgid "Locality"
+msgstr "Ort"
+
+#: models.py:53
+msgid "Locality of the address, e.g. village, city"
+msgstr "Ort der Anschrift, z.B. Dorf, Stadt"
+
+#: models.py:59
+msgid "Region"
+msgstr "Region"
+
+#: models.py:60
+msgid "Region of the address, e.g. state, province, county"
+msgstr "Region der Anschrift, z.B. Staat, Provinz, Bundesland"
+
+#: models.py:66
+msgid "Country"
+msgstr "Land"
+
+#: models.py:67
+msgid "Country of the address, e.g. nation state"
+msgstr "Land der Anschift, z.B. Nationalstaat"
+
+#: models.py:75
+msgid "Company this address belongs to"
+msgstr "Firma, zu der diese Adresse gehört"
+
+#: models.py:80
+msgid "Company Address"
+msgstr "Firmenanschrift"
+
+#: models.py:81
+msgid "Company Addresses"
+msgstr "Firmenanschriften"
+
+#: models.py:96
 msgid "Name of the category"
 msgstr "Name der Kategorie"
 
-#: models.py:97
+#: models.py:101
 msgid "Construction System Category"
 msgstr "Bausystem-Kategorie"
 
-#: models.py:98
+#: models.py:102
 msgid "Construction System Categories"
 msgstr "Bausystem-Kategorien"
 
-#: models.py:111
+#: models.py:117
 msgid "Name of the construction system"
 msgstr "Name des Bausystems"
 
-#: models.py:118 templates/construction_systems/index.html:20
+#: models.py:124 templates/construction_systems/index.html:20
 msgid "Component ID"
 msgstr "Komponenten-ID"
 
-#: models.py:119
+#: models.py:125
 msgid "Component ID of the construction system"
 msgstr "Komponenten-ID des Bausystems"
 
-#: models.py:126 templates/construction_systems/index.html:21
+#: models.py:132 templates/construction_systems/index.html:21
 msgid "Category"
 msgstr "Kategorie"
 
-#: models.py:127
+#: models.py:133
 msgid "Category of the construction system"
 msgstr "Kategorie des Bausystems"
 
-#: models.py:132 templates/construction_systems/index.html:22
+#: models.py:138 templates/construction_systems/index.html:22
 msgid "Certification Date"
 msgstr "Datum der Zertifizierung"
 
-#: models.py:133
+#: models.py:139
 msgid "When the construction system was certified"
 msgstr "Wann das Bausystem zertifiziert wurde"
 
-#: models.py:138
+#: models.py:144
 msgid "Description (de)"
 msgstr "Beschreibung (de)"
 
-#: models.py:139
+#: models.py:145
 msgid "German description of the construction system"
 msgstr "Deutsche Beschreibung des Bausystems"
 
-#: models.py:144
+#: models.py:150
 msgid "Description (en)"
 msgstr "Beschreibung (en)"
 
-#: models.py:145
+#: models.py:151
 msgid "English description of the construction system"
 msgstr "Englische Beschreibung des Bausystems"
 
-#: models.py:150
+#: models.py:156
 msgid "Total Thickness"
 msgstr "Gesamtdicke"
 
-#: models.py:151
+#: models.py:157
 msgid "Total thickness of the construction system in m"
 msgstr "Gesamtdicke des Bausystems in m"
 
-#: models.py:156
+#: models.py:162
 msgid "U-Value"
 msgstr "U-Wert"
 
-#: models.py:157
+#: models.py:163
 msgid "Thermal transmittance of the construction system in W/(m2K)"
 msgstr "Wärmedurchleitungskoeffizient des Bausystems in W/(m2K)"
 
-#: models.py:162
+#: models.py:168
 msgid "Construction System"
 msgstr "Bausystem"
 

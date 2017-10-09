@@ -7,9 +7,28 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 
+class Company(models.Model):
+    """Defines a company"""
+
+    name = models.CharField(
+        max_length=255,
+        blank=False,
+        null=False,
+        # unique=True,
+        verbose_name=_('Name'),
+        help_text=_('Name of the company'),
+    )
+    class Meta:
+        ordering = ['name']
+        verbose_name = _('Company')
+        verbose_name_plural = _('Companies')
+
+    def __str__(self):
+        return self.name
+
+
 class CompanyAddress(models.Model):
     """Defines a company's address"""
-
     street = models.CharField(
         max_length=255,
         blank=False,
@@ -47,6 +66,14 @@ class CompanyAddress(models.Model):
         verbose_name=_('Country'),
         help_text=_('Country of the address, e.g. nation state'),
     )
+    company = models.ForeignKey(
+        Company,
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True,
+        verbose_name=_('Company'),
+        help_text=_('Company this address belongs to'),
+    )
 
     class Meta:
         ordering = ['street']
@@ -55,35 +82,6 @@ class CompanyAddress(models.Model):
 
     def __str__(self):
         return '{}, {}'.format(self.street, self.locality)
-
-
-class Company(models.Model):
-    """Defines a company"""
-
-    name = models.CharField(
-        max_length=255,
-        blank=False,
-        null=False,
-        # unique=True,
-        verbose_name=_('Name'),
-        help_text=_('Name of the company'),
-    )
-    address = models.ForeignKey(
-        CompanyAddress,
-        on_delete=models.SET_NULL,
-        blank=True,
-        null=True,
-        verbose_name=_('Address'),
-        help_text=_('Address of the company'),
-    )
-
-    class Meta:
-        ordering = ['name']
-        verbose_name = _('Company')
-        verbose_name_plural = _('Companies')
-
-    def __str__(self):
-        return self.name
 
 
 class ConstructionSystemCategory(models.Model):
